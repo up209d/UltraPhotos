@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26D50EE82E69C91F00A6072C /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D50EC92E69C27D00A6072C /* PhotosUI.framework */; };
+		26D50EE92E69C91F00A6072C /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D50ECB2E69C27D00A6072C /* Photos.framework */; };
+		26D50EF42E69C91F00A6072C /* FilterPlus.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 26D50EE72E69C91F00A6072C /* FilterPlus.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26D50EA72E69C23400A6072C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26D50E8E2E69C23200A6072C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26D50E952E69C23200A6072C;
+			remoteInfo = UltraPhotos;
+		};
+		26D50EB12E69C23400A6072C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26D50E8E2E69C23200A6072C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26D50E952E69C23200A6072C;
+			remoteInfo = UltraPhotos;
+		};
+		26D50EF22E69C91F00A6072C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26D50E8E2E69C23200A6072C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26D50EE62E69C91F00A6072C;
+			remoteInfo = FilterPlus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26D50EDC2E69C27D00A6072C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				26D50EF42E69C91F00A6072C /* FilterPlus.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		26D50E962E69C23200A6072C /* UltraPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltraPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D50EA62E69C23400A6072C /* UltraPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltraPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D50EB02E69C23400A6072C /* UltraPhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltraPhotosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D50EC92E69C27D00A6072C /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		26D50ECB2E69C27D00A6072C /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		26D50EDD2E69C28E00A6072C /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		26D50EDF2E69C2A500A6072C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		26D50EE72E69C91F00A6072C /* FilterPlus.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FilterPlus.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		26D50EF52E69C91F00A6072C /* Exceptions for "FilterPlus" folder in "FilterPlus" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 26D50EE62E69C91F00A6072C /* FilterPlus */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		26D50E982E69C23200A6072C /* UltraPhotos */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UltraPhotos;
+			sourceTree = "<group>";
+		};
+		26D50EA92E69C23400A6072C /* UltraPhotosTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UltraPhotosTests;
+			sourceTree = "<group>";
+		};
+		26D50EB32E69C23400A6072C /* UltraPhotosUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UltraPhotosUITests;
+			sourceTree = "<group>";
+		};
+		26D50ECD2E69C27D00A6072C /* PhotoExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PhotoExtension;
+			sourceTree = "<group>";
+		};
+		26D50EEA2E69C91F00A6072C /* FilterPlus */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				26D50EF52E69C91F00A6072C /* Exceptions for "FilterPlus" folder in "FilterPlus" target */,
+			);
+			path = FilterPlus;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26D50E932E69C23200A6072C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D50EA32E69C23400A6072C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D50EAD2E69C23400A6072C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D50EE42E69C91F00A6072C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D50EE82E69C91F00A6072C /* PhotosUI.framework in Frameworks */,
+				26D50EE92E69C91F00A6072C /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26D50E8D2E69C23200A6072C = {
+			isa = PBXGroup;
+			children = (
+				26D50E982E69C23200A6072C /* UltraPhotos */,
+				26D50EA92E69C23400A6072C /* UltraPhotosTests */,
+				26D50EB32E69C23400A6072C /* UltraPhotosUITests */,
+				26D50ECD2E69C27D00A6072C /* PhotoExtension */,
+				26D50EEA2E69C91F00A6072C /* FilterPlus */,
+				26D50EC82E69C27D00A6072C /* Frameworks */,
+				26D50E972E69C23200A6072C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26D50E972E69C23200A6072C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26D50E962E69C23200A6072C /* UltraPhotos.app */,
+				26D50EA62E69C23400A6072C /* UltraPhotosTests.xctest */,
+				26D50EB02E69C23400A6072C /* UltraPhotosUITests.xctest */,
+				26D50EE72E69C91F00A6072C /* FilterPlus.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26D50EC82E69C27D00A6072C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26D50EDF2E69C2A500A6072C /* AppKit.framework */,
+				26D50EDD2E69C28E00A6072C /* CoreImage.framework */,
+				26D50EC92E69C27D00A6072C /* PhotosUI.framework */,
+				26D50ECB2E69C27D00A6072C /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26D50E952E69C23200A6072C /* UltraPhotos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26D50EBA2E69C23400A6072C /* Build configuration list for PBXNativeTarget "UltraPhotos" */;
+			buildPhases = (
+				26D50E922E69C23200A6072C /* Sources */,
+				26D50E932E69C23200A6072C /* Frameworks */,
+				26D50E942E69C23200A6072C /* Resources */,
+				26D50EDC2E69C27D00A6072C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26D50EF32E69C91F00A6072C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				26D50E982E69C23200A6072C /* UltraPhotos */,
+			);
+			name = UltraPhotos;
+			packageProductDependencies = (
+			);
+			productName = UltraPhotos;
+			productReference = 26D50E962E69C23200A6072C /* UltraPhotos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26D50EA52E69C23400A6072C /* UltraPhotosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26D50EBD2E69C23400A6072C /* Build configuration list for PBXNativeTarget "UltraPhotosTests" */;
+			buildPhases = (
+				26D50EA22E69C23400A6072C /* Sources */,
+				26D50EA32E69C23400A6072C /* Frameworks */,
+				26D50EA42E69C23400A6072C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26D50EA82E69C23400A6072C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				26D50EA92E69C23400A6072C /* UltraPhotosTests */,
+			);
+			name = UltraPhotosTests;
+			packageProductDependencies = (
+			);
+			productName = UltraPhotosTests;
+			productReference = 26D50EA62E69C23400A6072C /* UltraPhotosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26D50EAF2E69C23400A6072C /* UltraPhotosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26D50EC02E69C23400A6072C /* Build configuration list for PBXNativeTarget "UltraPhotosUITests" */;
+			buildPhases = (
+				26D50EAC2E69C23400A6072C /* Sources */,
+				26D50EAD2E69C23400A6072C /* Frameworks */,
+				26D50EAE2E69C23400A6072C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26D50EB22E69C23400A6072C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				26D50EB32E69C23400A6072C /* UltraPhotosUITests */,
+			);
+			name = UltraPhotosUITests;
+			packageProductDependencies = (
+			);
+			productName = UltraPhotosUITests;
+			productReference = 26D50EB02E69C23400A6072C /* UltraPhotosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		26D50EE62E69C91F00A6072C /* FilterPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26D50EF62E69C91F00A6072C /* Build configuration list for PBXNativeTarget "FilterPlus" */;
+			buildPhases = (
+				26D50EE32E69C91F00A6072C /* Sources */,
+				26D50EE42E69C91F00A6072C /* Frameworks */,
+				26D50EE52E69C91F00A6072C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				26D50EEA2E69C91F00A6072C /* FilterPlus */,
+			);
+			name = FilterPlus;
+			packageProductDependencies = (
+			);
+			productName = FilterPlus;
+			productReference = 26D50EE72E69C91F00A6072C /* FilterPlus.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26D50E8E2E69C23200A6072C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					26D50E952E69C23200A6072C = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					26D50EA52E69C23400A6072C = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 26D50E952E69C23200A6072C;
+					};
+					26D50EAF2E69C23400A6072C = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 26D50E952E69C23200A6072C;
+					};
+					26D50EE62E69C91F00A6072C = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 26D50E912E69C23200A6072C /* Build configuration list for PBXProject "UltraPhotos" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26D50E8D2E69C23200A6072C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 26D50E972E69C23200A6072C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26D50E952E69C23200A6072C /* UltraPhotos */,
+				26D50EA52E69C23400A6072C /* UltraPhotosTests */,
+				26D50EAF2E69C23400A6072C /* UltraPhotosUITests */,
+				26D50EE62E69C91F00A6072C /* FilterPlus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26D50E942E69C23200A6072C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D50EA42E69C23400A6072C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D50EAE2E69C23400A6072C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D50EE52E69C91F00A6072C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26D50E922E69C23200A6072C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D50EA22E69C23400A6072C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D50EAC2E69C23400A6072C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D50EE32E69C91F00A6072C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26D50EA82E69C23400A6072C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26D50E952E69C23200A6072C /* UltraPhotos */;
+			targetProxy = 26D50EA72E69C23400A6072C /* PBXContainerItemProxy */;
+		};
+		26D50EB22E69C23400A6072C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26D50E952E69C23200A6072C /* UltraPhotos */;
+			targetProxy = 26D50EB12E69C23400A6072C /* PBXContainerItemProxy */;
+		};
+		26D50EF32E69C91F00A6072C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26D50EE62E69C91F00A6072C /* FilterPlus */;
+			targetProxy = 26D50EF22E69C91F00A6072C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		26D50EB82E69C23400A6072C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26D50EB92E69C23400A6072C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		26D50EBB2E69C23400A6072C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UltraPhotos/UltraPhotos.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.up209d.dev.UltraPhotos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		26D50EBC2E69C23400A6072C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UltraPhotos/UltraPhotos.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.up209d.dev.UltraPhotos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		26D50EBE2E69C23400A6072C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.up209d.dev.UltraPhotosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UltraPhotos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UltraPhotos";
+			};
+			name = Debug;
+		};
+		26D50EBF2E69C23400A6072C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.up209d.dev.UltraPhotosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UltraPhotos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UltraPhotos";
+			};
+			name = Release;
+		};
+		26D50EC12E69C23400A6072C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.up209d.dev.UltraPhotosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = UltraPhotos;
+			};
+			name = Debug;
+		};
+		26D50EC22E69C23400A6072C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.up209d.dev.UltraPhotosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = UltraPhotos;
+			};
+			name = Release;
+		};
+		26D50EF72E69C91F00A6072C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FilterPlus/FilterPlus.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FilterPlus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FilterPlus;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.up209d.dev.UltraPhotos.FilterPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		26D50EF82E69C91F00A6072C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FilterPlus/FilterPlus.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FilterPlus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FilterPlus;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.up209d.dev.UltraPhotos.FilterPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26D50E912E69C23200A6072C /* Build configuration list for PBXProject "UltraPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D50EB82E69C23400A6072C /* Debug */,
+				26D50EB92E69C23400A6072C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26D50EBA2E69C23400A6072C /* Build configuration list for PBXNativeTarget "UltraPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D50EBB2E69C23400A6072C /* Debug */,
+				26D50EBC2E69C23400A6072C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26D50EBD2E69C23400A6072C /* Build configuration list for PBXNativeTarget "UltraPhotosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D50EBE2E69C23400A6072C /* Debug */,
+				26D50EBF2E69C23400A6072C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26D50EC02E69C23400A6072C /* Build configuration list for PBXNativeTarget "UltraPhotosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D50EC12E69C23400A6072C /* Debug */,
+				26D50EC22E69C23400A6072C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26D50EF62E69C91F00A6072C /* Build configuration list for PBXNativeTarget "FilterPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D50EF72E69C91F00A6072C /* Debug */,
+				26D50EF82E69C91F00A6072C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26D50E8E2E69C23200A6072C /* Project object */;
+}

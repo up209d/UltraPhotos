@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="23727" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23727"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PhotoEditingViewController" customModule="FilterPlus" customModuleProvider="target">
+            <connections>
+                <outlet property="hidePreviewButton" destination="wGz-8A-lhb" id="6ro-1H-CED"/>
+                <outlet property="intensitySlider" destination="jRp-cr-Lv8" id="bdo-zk-R2a"/>
+                <outlet property="lutCollectionView" destination="K36-ER-3xp" id="xSs-2o-bBA"/>
+                <outlet property="lutScrollView" destination="u0y-1a-fgu" id="Y9E-SW-Gf8"/>
+                <outlet property="previewImageView" destination="aNE-2N-FmL" id="DFb-bk-ZMr"/>
+                <outlet property="sourceImageView" destination="jON-9A-Vna" id="QWH-Mt-Prb"/>
+                <outlet property="splitView" destination="fgQ-K8-iTX" id="IBe-u6-bTE"/>
+                <outlet property="view" destination="fgQ-K8-iTX" id="ok7-rg-r4h"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <splitView focusRingType="none" arrangesAllSubviews="NO" dividerStyle="paneSplitter" vertical="YES" id="fgQ-K8-iTX">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <customView fixedFrame="YES" id="229-yi-pMq" userLabel="LUT Selection View">
+                    <rect key="frame" x="0.0" y="0.0" width="140" height="400"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <subviews>
+                        <scrollView wantsLayer="YES" focusRingType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="u0y-1a-fgu">
+                            <rect key="frame" x="0.0" y="0.0" width="140" height="400"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <clipView key="contentView" id="qIk-hN-lrl">
+                                <rect key="frame" x="1" y="1" width="138" height="398"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <collectionView selectable="YES" id="K36-ER-3xp">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="398"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" id="NCR-QJ-aKR">
+                                            <size key="itemSize" width="1000" height="1000"/>
+                                        </collectionViewFlowLayout>
+                                        <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </collectionView>
+                                </subviews>
+                            </clipView>
+                            <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="Ear-Hs-WZz">
+                                <rect key="frame" x="-100" y="-100" width="138" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                            <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="zQT-OF-IcT">
+                                <rect key="frame" x="123" y="1" width="16" height="376"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                        </scrollView>
+                    </subviews>
+                </customView>
+                <customView fixedFrame="YES" id="9Et-ui-bId" userLabel="Preview View">
+                    <rect key="frame" x="150" y="0.0" width="450" height="400"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="jON-9A-Vna" userLabel="Source">
+                            <rect key="frame" x="50" y="50" width="350" height="300"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <shadow key="shadow" blurRadius="10">
+                                <size key="offset" width="5" height="5"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </shadow>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="l76-Ya-zIJ"/>
+                        </imageView>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="aNE-2N-FmL" userLabel="Preview" customClass="ClickableNSImageView" customModule="FilterPlus" customModuleProvider="target">
+                            <rect key="frame" x="50" y="50" width="350" height="300"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" id="9zb-34-AdI"/>
+                        </imageView>
+                        <slider verticalHuggingPriority="750" id="jRp-cr-Lv8">
+                            <rect key="frame" x="18" y="14" width="200" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <shadow key="shadow" blurRadius="5">
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </shadow>
+                            <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="100" tickMarkPosition="above" sliderType="linear" id="nln-pg-Hg4">
+                                <font key="font" metaFont="cellTitle"/>
+                            </sliderCell>
+                            <connections>
+                                <action selector="intensityChanged:" target="-2" id="isx-XR-1fT"/>
+                            </connections>
+                        </slider>
+                        <button focusRingType="none" id="wGz-8A-lhb" customClass="ClickableNSButton" customModule="FilterPlus" customModuleProvider="target">
+                            <rect key="frame" x="389" y="18" width="41.5" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="NSQuickLookTemplate" imagePosition="only" alignment="center" focusRingType="none" imageScaling="proportionallyUpOrDown" inset="2" id="lVa-tp-3O1">
+                                <behavior key="behavior" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <color key="contentTintColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        </button>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="r1d-Zu-3wB">
+                            <rect key="frame" x="18" y="41" width="56" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <shadow key="shadow" blurRadius="3">
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </shadow>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Intensity" id="iVc-NT-Qfz">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                </customView>
+            </subviews>
+            <holdingPriorities>
+                <real value="150"/>
+                <real value="140"/>
+            </holdingPriorities>
+            <point key="canvasLocation" x="-117" y="-541"/>
+        </splitView>
+    </objects>
+    <resources>
+        <image name="NSQuickLookTemplate" width="26" height="17"/>
+    </resources>
+</document>

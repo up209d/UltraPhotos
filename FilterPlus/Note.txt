@@ -1,0 +1,32 @@
+    func makeThumbnailSource(from image: CIImage, maxDimension: CGFloat = 150) -> CIImage {
+        let extent = image.extent
+        let scale = maxDimension / max(extent.width, extent.height)
+        return image.transformed(by: CGAffineTransform(scaleX: scale, y: scale))
+    }
+    
+    func renderThumbnail(for cubeUrl: URL, baseImage: CIImage, context: CIContext) -> NSImage? {
+        let thumbImage = makeThumbnailSource(from: baseImage)
+        let filtered = self.applyFilterLUT(to: thumbImage, cubeUrl: cubeUrl, intensity: 100)
+        guard let cgImage = context.createCGImage(filtered, from: filtered.extent) else {
+            return nil
+        }
+        let image = NSImage()
+        self.lutSelectionViewController.lutThumbnails.append(
+            // TODO cache key for each thumbnail
+            ViewThumbnailItem(key: "-----TODO------", image: image)
+        )
+        return image
+    }
+        
+    func renderAllThumbnails() {
+        DispatchQueue.global(qos: .userInitiated).async {
+            for lutPath in lutPaths {
+                renderThumbnail
+            }
+            
+            // Once done, go back to the main thread to update UI
+            DispatchQueue.main.async {
+                completion(thumbnail)
+            }
+        }
+    }
