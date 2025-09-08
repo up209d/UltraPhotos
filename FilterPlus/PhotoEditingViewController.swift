@@ -303,6 +303,12 @@ class PhotoEditingViewController: NSViewController, PHContentEditingController {
                     }
                     let item = ViewThumbnailItem(key: lutPath.absoluteString, image: t)
                     self.lutSelectionViewController.lutThumbnails.append(item)
+                    self.lutSelectionViewController.lutThumbnails.sort { a, b in
+                        let originalKey = "Default.cube"
+                        if a.key.hasSuffix(originalKey) { return true }
+                        if b.key.hasSuffix(originalKey) { return false }
+                        return a.key < b.key
+                    }
                 }
             }
         }

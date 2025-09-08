@@ -77,20 +77,28 @@ extension LUTSelectionViewController: NSCollectionViewDelegate {
             withIdentifier: LUTThumbnail.identifier,
             for: indexPath
         ) as! LUTThumbnail
-        item.imageView?.image = lutThumbnails[indexPath.item].image
+        item.setKey(lutThumbnails[indexPath.item].key)
+        item.setImage(lutThumbnails[indexPath.item].image)
         item.setLabel(URL(string: lutThumbnails[indexPath.item].key)!.lastPathComponent)
         return item
     }
     
     func collectionView(_ collectionView: NSCollectionView, didSelectItemsAt indexPaths: Set<IndexPath>) {
         for indexPath in indexPaths {
-            onSelected?(lutThumbnails[indexPath.item].key)
+            if let item = collectionView.item(at: indexPath) as? LUTThumbnail {
+                item.setSelected(selected: true)
+                onSelected?(lutThumbnails[indexPath.item].key)
+            }
+            
         }
     }
     
     func collectionView(_ collectionView: NSCollectionView, didDeselectItemsAt indexPaths: Set<IndexPath>) {
         for indexPath in indexPaths {
-            onDeselected?(lutThumbnails[indexPath.item].key)
+            if let item = collectionView.item(at: indexPath) as? LUTThumbnail {
+                item.setSelected(selected: false)
+                onDeselected?(lutThumbnails[indexPath.item].key)
+            }
         }
     }
 }

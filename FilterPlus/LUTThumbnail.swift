@@ -9,7 +9,8 @@ import Cocoa
 
 class LUTThumbnail: NSCollectionViewItem {
     static let identifier = NSUserInterfaceItemIdentifier("LUTThumbnail")
-    private var titleLabel: NSTextField!
+    private var label: NSTextField!
+    private var key: String!
     override func loadView() {
         // Create view programmatically
         self.view = NSView()
@@ -26,29 +27,45 @@ class LUTThumbnail: NSCollectionViewItem {
         ])
         
         // Label setup
-        let label = NSTextField(labelWithString: "") // non-editable
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.alignment = .center
-        label.textColor = .white
-        label.font = NSFont.systemFont(ofSize: 12, weight: .medium)
+        self.label = NSTextField(labelWithString: "") // non-editable
+        self.label.translatesAutoresizingMaskIntoConstraints = false
+        self.label.alignment = .center
+        self.label.textColor = .white
+        self.label.font = NSFont.systemFont(ofSize: 12, weight: .medium)
         
         // Add shadow
         let shadow = NSShadow()
         shadow.shadowColor = NSColor.black.withAlphaComponent(0.7)
         shadow.shadowBlurRadius = 3
         shadow.shadowOffset = NSSize(width: 1, height: -1)
-        label.shadow = shadow
+        self.label.shadow = shadow
         
-        view.addSubview(label)
-        self.titleLabel = label
+        view.addSubview(self.label)
         
         NSLayoutConstraint.activate([
-            label.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -4), // 4pt from bottom
-            label.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            self.label.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -4), // 4pt from bottom
+            self.label.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
     
+    func setImage(_ image: NSImage) {
+        self.imageView?.image = image
+    }
+    
+    func setKey(_ key: String) {
+        self.key = key
+    }
+    
     func setLabel(_ text: String) {
-        titleLabel.stringValue = text
+        self.label.stringValue = text
+    }
+    
+    func setSelected(selected: Bool) {
+        self.isSelected = selected
+        if (selected) {
+            self.label.textColor = .yellow
+        } else {
+            self.label.textColor = .white
+        }
     }
 }
