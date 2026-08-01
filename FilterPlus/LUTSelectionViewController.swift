@@ -1,5 +1,5 @@
 //
-//  LUT.swift
+//  LUTSelectionViewController.swift
 //  UltraPhotos
 //
 //  Created by Duc Duong on 8/9/2025.

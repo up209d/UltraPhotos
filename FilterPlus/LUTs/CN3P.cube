@@ -1,8 +1,6 @@
-#Generated with IWLTBAP LUT Generator
-#Website: http://luts.iwltbap.com
-TITLE "Lut Convert Panel"
+# Negative film
 
-#LUT size
+TITLE "Negative film"
 LUT_3D_SIZE 64
 
 #LUT data points
